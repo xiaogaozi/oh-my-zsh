@@ -1,4 +1,5 @@
 export EDITOR='vim -f'
+export LANG=zh_CN.UTF-8
 export PHABRICATOR_ENV=custom/myconfig
 
 # Custom PATH
