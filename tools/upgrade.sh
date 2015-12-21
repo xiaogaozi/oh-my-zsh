@@ -20,7 +20,7 @@ else
   NORMAL=""
 fi
 
-printf "${BLUE}%s${NORMAL}\n" "Upgrading Oh My Zsh"
+printf "${BLUE}%s${NORMAL}\n" "Updating Oh My Zsh"
 cd "$ZSH"
 if git pull --no-rebase --stat upstream master && git push origin master
 then
