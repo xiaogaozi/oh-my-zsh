@@ -13,7 +13,7 @@ fpath=($(brew --prefix)/share/zsh/site-functions $(brew --prefix)/share/zsh-comp
 LESSOPEN="|lesspipe.sh %s"; export LESSOPEN
 
 # SSH agent
-if [ -f ~/.ssh/id_rsa_gcj ]; then
+if [[ (-f ~/.ssh/id_rsa_gcj) && ! $(ssh-add -l | grep .ssh/id_rsa_gcj) ]]; then
   ssh-add -D
   ssh-add ~/.ssh/id_rsa_gcj
 fi
