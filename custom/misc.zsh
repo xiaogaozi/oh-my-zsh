@@ -1,9 +1,10 @@
 export EDITOR='vim -f'
 export LANG=zh_CN.UTF-8
-export PHABRICATOR_ENV=custom/myconfig
+export GOPATH=$HOME/go
+export SPARK_HOME=/opt/boxen/homebrew/Cellar/apache-spark/1.3.1_1/libexec
 
 # Custom PATH
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin:$PATH:$GOPATH/bin
 defaults write $HOME/.MacOSX/environment PATH "$PATH"
 
 # completion
