@@ -1,10 +1,10 @@
 locals.zsh
 log/.zsh_history
 projects.zsh
-*.swp
-cache/
 
-### /Users/xiaogaozi/.gitignore-boilerplates/Global/vim.gitignore
+# temp files directories
+cache/
+log/
 
 .*.sw[a-z]
 *.un~
