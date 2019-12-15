@@ -1,12 +1,4 @@
-locals.zsh
-log/.zsh_history
-projects.zsh
-
 # temp files directories
 cache/
 log/
-
-.*.sw[a-z]
-*.un~
-Session.vim
-.netrwhist
+*.swp
